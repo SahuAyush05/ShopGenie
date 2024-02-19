@@ -1,13 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap");
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-#root{
+#root {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
@@ -15,33 +15,23 @@
 body {
   margin: 0;
   display: flex;
-  background-image: linear-gradient(to right, #E5E3D2,#E5E3FF);
+  background-image: linear-gradient(to right, #e5e3d2, #e5e3ff);
   height: 100%;
 }
 #main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 #main-header #title {
   display: flex;
   align-items: center;
 }
-#main-header #title img {
-  width:7rem;
-  height: 7rem;
-  object-fit: contain;
-}
-#main-header #title h1{
-  font-family: 'Lato', sans-serif;
+#main-header #title h1 {
+  font-family: "Lato", sans-serif;
   font-weight: 530;
   font-size: 1.5rem;
   margin: 0;
-  color: #D04848;
+  color: #d04848;
   letter-spacing: 0.2rem;
-
 }
-
-

@@ -119,7 +119,7 @@ const SignIn = () => {
           <div className=" flex justify-center items-center">
             <button
               type="submit"
-              className="bg-[#535C91]  m-auto hover:bg-[#070F2B] text-[#E5E3FF] py-2 mt-2 w-[8em] px-4 rounded-md shadow-md hover:shadow-[#535C91] hover:shadow-xl transform transition duration-300 ease-in-out hover:-translate-y-1 "
+              className="bg-[#535C91]  m-auto hover:bg-[#070F2B] text-[#E5E3FF] py-2 mt-2 w-[8em] px-4 rounded-md  transform transition duration-300 ease-in-out hover:-translate-y-1 "
             >
               Sign In
             </button>
