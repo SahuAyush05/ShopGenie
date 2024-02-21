@@ -1,22 +1,18 @@
 import './index.css'
-import Header from './components/Header'
-import SignIn from './components/SignIn'
-import Landing from './components/Landing'
-import HeaderHome from './components/HeaderHome'
-import Card1 from './components/UI/Card1'
-import DisplayItem from './components/UI/DisplayItem'
-import HomePage from './components/HomePage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home'
+import LandingPage from './Pages/LandingPage';
+import SearchItem from './components/SearchItem';
 
 function App() {
 
   return (
     <div >
-      {/* <Header/>
-      <Landing/> */}
-      <HeaderHome />
-      {/*  */}
-      <HomePage/>
-      <DisplayItem/>
+      <Routes>
+        <Route path='/' element={<LandingPage/>} />
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/search' element={<SearchItem/>}/>
+      </Routes>
     </div>
   )
 }

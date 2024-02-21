@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import { FaSignInAlt } from "react-icons/fa";
 const SignIn = () => {
+  const navigate = useNavigate();
   const [responseData, setResponseData] = useState(null);
   const [error, setError] = useState(false);
   function submitHandler(event) {
@@ -32,8 +34,6 @@ const SignIn = () => {
         }
 
         const data2 = await response.json();
-        console.log(data2.token);
-
         async function checkData() {
           try {
             const response2 = await fetch("https://dummyjson.com/auth/me", {
@@ -48,6 +48,9 @@ const SignIn = () => {
             setResponseData(data3);
             setError(false);
             console.log("success");
+            localStorage.setItem('userData', JSON.stringify(data3));
+            navigate('/home');
+            
           } catch (error) {
             console.error("Error fetching data:", error);
           }
